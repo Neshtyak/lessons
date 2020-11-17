@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>less7</title>
+    <style>
+        body{
+            min-height: 100vh;
+            background-size: cover;
+        }
+        
+    </style>
+    <script  src="functions.js"></script>
+</head>
+<body>
+
+    <script>
+    function getBg() {
+        let grad = `${getNumber(360)}deg`
+        for (let i = 0; i < getNumber(11,1); i++) {
+            grad += "," + getRGB();
+        }
+
+        document.body.style.backgroundImage = `linear-gradient(${grad})`;
+    }
+    setInterval(()=>{getBg()}, 1000);
+    </script>
+    
+</body>
+</html>

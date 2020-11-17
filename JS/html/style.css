@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 141, 211, 0.782);
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 50px;
+    margin: calc(50vh - 350px) auto;
+
+   /* способ понимания размеров блока для чайников:
+      box-sizing: content-box;  */
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;  /* row , row-reverse, column, column-reverse */
+    justify-content:center; 
+
+    /* расположение элементов вдоль основной оси flex-start, flex-end, flex-center, space-between, space- around*/
+    /*justify-content: space-between; */
+    /* align-items расположение элементов вдоль поперечной оси */
+    /* align-items: stretch; */
+    
+    align-items: center; 
+}
+
+.card {
+    width: 70px;
+    height: 100px;
+    font: 50px / 1.5 sans-serif;
+    color:rgb(255, 141, 211);
+    background:rgb(177, 35, 123);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing:  border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

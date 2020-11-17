@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    border-top: solid;
+} */
+
+.box{
+    font: 20px sans-serif;
+    background-color: bisque;
+    width: 300px;
+    /* width: 50vw;  */
+    /* height: 50vh; */
+    /* height: 150px; */
+    min-height: 100px; 
+    /* max-height: 200px; */
+    /* overflow: auto;  visiblehidden scroll auto */
+
+    /* vh: 100vh - 100% видимой области высоты окна браузера (viewport height) */
+    /* vh: 100vw - 100% видимой области ширины окна браузера (viewport width) */
+
+    border-width: 5px;
+    border-style: solid; /* none solid dotted dashed double */
+    border-color: coral;
+    text-align: justify;
+    line-height: 1;
+    border-right-color: burlywood;
+    border-left-color: burlywood;
+    border-bottom-style: dashed;
+    border-bottom: 10px dashed coral;
+
+    /* padding: 20px; отступ между контентом и границей со всех сторон */
+    /* padding: 20px 100px 50px 0;  */
+    /* padding: 20px 50px; */
+    padding: 50px 100px 100px; /* верх горизонталь низ*/
+
+    /* margin: 50px 20px 100px; */
+    margin: 50px auto 100px;
+}
+
+body{
+    background-color: #222;
+}
+
+.menu{
+    width: 510px;
+    background-color: rgb(240, 185, 140);
+    margin: 0 auto;
+    list-style-type: none;
+    /* font: 30px fantasy; */
+    color: olive;
+    font-size: 0;
+}
+
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+.menu li{
+    border: 1px solid;
+    width: calc(100% / 7 - 2px);
+    height: 50px;
+    font: 15px sans-serif;
+    text-align: center;
+    line-height: 50px; /* костыль типа шоб посредине было круто да*/
+    display: inline-block;
+}
+
+.menu a:hover{
+    background-color: rgb(255, 228, 210);
+    display: block;
+
+}
+

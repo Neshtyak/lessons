@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.09.2002</title>
+</head>
+<body>
+    <form action="#" method="GET">
+
+    <h1>Форма для заказа книги</h1>
+    Выберите магаз: <select name="city">
+        <option>Уфа</option>
+        <option>Барнаул</option>
+        <option selected>Биробиджан</option>
+    </select> <br>
+   Название: <input type="text" name="name"><br>
+   Автор: <input type="text" name="author"><br>
+   Год издания: <input type="number" name="year" min="1940" max="2020" step="1" value="2019"><br>
+   Кол-во страницй: <input type="number" name="pages" min="10" max="2000">
+
+<fieldset>
+<!-- fieldset бревно -->
+   <legend>Категория</legend>
+   <input type="radio" name="category" value="JS" checked> JavaScript / html / css <br>
+   <input type="radio" name="category" value="Java"> Java <br>
+   <input type="radio" name="category" value="php"> PHP <br>
+   <input type="radio" name="category" value="python"> Python <br>
+   <input type="radio" name="category" value="c++"> C++ <br>
+
+</fieldset>
+<fieldset>
+
+   <legend>Дополнительные параметры</legend>
+   <input type="checkbox" name="addition1" value="цветные карандаши" checked> Цветные картиночки<br>
+   <input type="checkbox" name="addition2" value="lдетский формат"> Детский формат <br>
+   <input type="checkbox" name="addition3" value="начальный уровень"> Начальный уровень <br>
+   <input type="checkbox" name="addition4" value="для продвинутых"> Для продвинутых <br>
+   <input type="checkbox" name="addition5" value="жетский переплет" > Жесткий переплет <br>
+
+</fieldset>
+
+   <br>
+   <textarea name="comment" placeholder="пихуй коммент" ></textarea>
+   <br>
+   <input type="submit" value="Жмяк">
+   <input type="reset" value="Отставить">
+
+  </form>
+</body>
+</html>

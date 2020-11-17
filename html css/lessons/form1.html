@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы 18.09</title>
+</head>
+<body>
+    <a href="index.html">Списки</a>
+    <a href="css.html">CSS</a>
+    <h1>Форма заказа пиццы</h1>
+    <form action="#" method="GET">
+
+        <!-- post более безопасный
+        гет больше для проверки -->
+
+        <!-- Пицца (Маргарита / 4 сыра / Пеперони / Гавайская)
+        Добавки (Сыр / Мясо / Грибы / Оливки / Ветчина)
+        Количество
+        Оплата (карта/нал)
+        Адрес доставки
+        Имя
+        Телефон -->
+        
+        <h3>Выберите пиццу</h3>
+        <input type="radio" name="sort" value="Маргарита"> Маргарита <br>
+        <input type="radio" name="sort" value="4Сыра"> 4 сыра <br>
+        <input type="radio" name="sort" value="Гавайская"> Гавайская
+        <br>
+        <input type="radio" name="sort" value="Пеперони"> Пеперони 
+        <br>
+
+        <h3>Способ оплаты</h3>
+        <label><input type="radio" name="pay"> Карта
+        </label>
+        <input id="cash" type="radio" name="pay">
+         <label for="cash">Нал</label> <br>
+
+         <h3>Что добавить?</h3>
+         <input type="checkbox" name="addition1"> Грибы<br>
+         <input type="checkbox" name="addition2"> Сыр<br>
+         <input type="checkbox" name="addition3"> Оливки<br>
+         <input type="checkbox" name="addition4"> Ветчина<br>
+
+        Количесво пицц: <input type="number" name="count" min="1" max="5" step=".5">
+        <br>
+        Имя: <input type="text" name="usr_name">
+        <br>
+        Телефон: <input type="tel" name="usr_tel">
+        <br>
+        Почта: <input type="email" name="usr_mail">
+        <br>
+        Адрес доставки: <input type="text" name="usr_adress">
+        <br>
+        Секретный код: <input type="password" name="pwd">
+        <br>
+        Дата доставки: <input type="date" name="usr_date">
+        <br>
+        Время доставки: <input type="time" name="usr_time">
+        <br>
+        <input type="submit" value="Жмяк">
+        <input type="reset" value="Отставить">
+        <br>
+
+        <!-- type="button" просто кнопка но чтоб заработала в помощь JS -->
+
+    </form>
+</body>
+</html>
